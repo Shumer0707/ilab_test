@@ -7,7 +7,8 @@
     <link rel="stylesheet" href="/styles.css">
 </head>
 <body>
-    <form action="/login" method="post">
+    <?php $basePath = dirname($_SERVER['SCRIPT_NAME']); ?>
+    <form action="<?php echo $basePath; ?>/login" method="POST">
         <h2>Admin Login</h2>
         <label for="username">Username:</label>
         <input type="text" name="username" id="username" required>

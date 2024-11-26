@@ -4,7 +4,7 @@
 	<title>Главная</title>
 	<meta charset="UTF-8">
 	<meta name="format-detection" content="telephone=no">
-	<link rel="stylesheet" href="css/style.min.css">
+	<link rel="stylesheet" href="app/views/css/style.min.css">
 	<link rel="shortcut icon" href="favicon.ico">
 	<!-- <meta name="robots" content="noindex, nofollow"> -->
 	<!-- <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"> -->
@@ -263,14 +263,14 @@
 						<div class="menu__head head-menu">
 							<p class="head-menu__logo">mscards<span>.ro</span></p>
 							<div class="head-menu__close">
-								<picture><source srcset="img/icons/close.svg" type="image/webp"><img src="img/icons/close.svg" alt="Close-menu"></picture>
+								<picture><source srcset="app/views/img/icons/close.svg" type="image/webp"><img src="app/views/img/icons/close.svg" alt="Close-menu"></picture>
 							</div>
 						</div>
 						<div class="menu__body">
 							<form action="#" class="menu__search search-menu">
 								<input type="text" name="search" placeholder="Поиск" class="search-menu__input">
 								<button type="submit" class="search-menu__btn">
-									<picture><source srcset="img/icons/search.svg" type="image/webp"><img src="img/icons/search.svg" alt="Search"></picture>
+									<picture><source srcset="app/views/img/icons/search.svg" type="image/webp"><img src="app/views/img/icons/search.svg" alt="Search"></picture>
 								</button>
 							</form>
 							<div class="menu__catalog catalog-menu">
@@ -281,7 +281,7 @@
 									<div class="body-catalog-menu__head">
 										<p class="body-catalog-menu__title">Каталог</p>
 										<div class="body-catalog-menu__back">
-											<picture><source srcset="img/icons/back-blue.svg" type="image/webp"><img src="img/icons/back-blue.svg" alt="Back"></picture>
+											<picture><source srcset="app/views/img/icons/back-blue.svg" type="image/webp"><img src="app/views/img/icons/back-blue.svg" alt="Back"></picture>
 										</div>
 									</div>
 									<ul class="body-catalog-menu__list">
@@ -290,7 +290,7 @@
 											<div class="body-catalog-menu__subbody">
 												<div class="body-catalog-menu__subhead">
 													<div class="body-catalog-menu__subback">
-														<picture><source srcset="img/icons/back-blue.svg" type="image/webp"><img src="img/icons/back-blue.svg" alt="Back"></picture>
+														<picture><source srcset="app/views/img/icons/back-blue.svg" type="image/webp"><img src="app/views/img/icons/back-blue.svg" alt="Back"></picture>
 													</div>
 													<p class="body-catalog-menu__subtitle">Акции</p>
 												</div>
@@ -321,7 +321,7 @@
 											<div class="body-catalog-menu__subbody">
 												<div class="body-catalog-menu__subhead">
 													<div class="body-catalog-menu__subback">
-														<picture><source srcset="img/icons/back-blue.svg" type="image/webp"><img src="img/icons/back-blue.svg" alt="Back"></picture>
+														<picture><source srcset="app/views/img/icons/back-blue.svg" type="image/webp"><img src="app/views/img/icons/back-blue.svg" alt="Back"></picture>
 													</div>
 													<p class="body-catalog-menu__subtitle">NFC Брелки</p>
 												</div>
@@ -352,7 +352,7 @@
 											<div class="body-catalog-menu__subbody">
 												<div class="body-catalog-menu__subhead">
 													<div class="body-catalog-menu__subback">
-														<picture><source srcset="img/icons/back-blue.svg" type="image/webp"><img src="img/icons/back-blue.svg" alt="Back"></picture>
+														<picture><source srcset="app/views/img/icons/back-blue.svg" type="image/webp"><img src="app/views/img/icons/back-blue.svg" alt="Back"></picture>
 													</div>
 													<p class="body-catalog-menu__subtitle">NFC Ридеры</p>
 												</div>
@@ -383,7 +383,7 @@
 											<div class="body-catalog-menu__subbody">
 												<div class="body-catalog-menu__subhead">
 													<div class="body-catalog-menu__subback">
-														<picture><source srcset="img/icons/back-blue.svg" type="image/webp"><img src="img/icons/back-blue.svg" alt="Back"></picture>
+														<picture><source srcset="app/views/img/icons/back-blue.svg" type="image/webp"><img src="app/views/img/icons/back-blue.svg" alt="Back"></picture>
 													</div>
 													<p class="body-catalog-menu__subtitle">NFC стикеры</p>
 												</div>
@@ -420,7 +420,7 @@
 											<div class="body-catalog-menu__subbody">
 												<div class="body-catalog-menu__subhead">
 													<div class="body-catalog-menu__subback">
-														<picture><source srcset="img/icons/back-blue.svg" type="image/webp"><img src="img/icons/back-blue.svg" alt="Back"></picture>
+														<picture><source srcset="app/views/img/icons/back-blue.svg" type="image/webp"><img src="app/views/img/icons/back-blue.svg" alt="Back"></picture>
 													</div>
 													<p class="body-catalog-menu__subtitle">RFID метки</p>
 												</div>
@@ -451,7 +451,7 @@
 											<div class="body-catalog-menu__subbody">
 												<div class="body-catalog-menu__subhead">
 													<div class="body-catalog-menu__subback">
-														<picture><source srcset="img/icons/back-blue.svg" type="image/webp"><img src="img/icons/back-blue.svg" alt="Back"></picture>
+														<picture><source srcset="app/views/img/icons/back-blue.svg" type="image/webp"><img src="app/views/img/icons/back-blue.svg" alt="Back"></picture>
 													</div>
 													<p class="body-catalog-menu__subtitle">RFID браслеты</p>
 												</div>
@@ -500,17 +500,17 @@
 			</div>
 			<form action="#" class="main-header__search search-header">
 					<div class="search-header__head">
-						<picture><source srcset="img/icons/search.svg" type="image/webp"><img src="img/icons/search.svg" alt="Open-search"></picture>
+						<picture><source srcset="app/views/img/icons/search.svg" type="image/webp"><img src="app/views/img/icons/search.svg" alt="Open-search"></picture>
 					</div>
 					<div class="search-header__body">
 						<div class="search-header__content">
 							<input type="text" name="search" placeholder="Поиск" class="search-header__input">
 							<button type="submit" class="search-header__btn">
-								<picture><source srcset="img/icons/search.svg" type="image/webp"><img src="img/icons/search.svg" alt="Search"></picture>
+								<picture><source srcset="app/views/img/icons/search.svg" type="image/webp"><img src="app/views/img/icons/search.svg" alt="Search"></picture>
 							</button>
 						</div>
 						<div class="search-header__close">
-							<picture><source srcset="img/icons/close.svg" type="image/webp"><img src="img/icons/close.svg" alt="Close-search"></picture>
+							<picture><source srcset="app/views/img/icons/close.svg" type="image/webp"><img src="app/views/img/icons/close.svg" alt="Close-search"></picture>
 						</div>
 					</div>
 			</form>
@@ -524,20 +524,20 @@
 						<div class="banner__content">
 							<div class="banner__slider _swiper">
 								<div class="banner__item">
-									<picture><source srcset="img/banner.webp" type="image/webp"><img src="img/banner.png" alt="Banner-image"></picture>
+									<picture><source srcset="app/views/img/banner.webp" type="image/webp"><img src="img/banner.png" alt="Banner-image"></picture>
 								</div>
 								<div class="banner__item">
-									<picture><source srcset="img/banner.webp" type="image/webp"><img src="img/banner.png" alt="Banner-image"></picture>
+									<picture><source srcset="app/views/img/banner.webp" type="image/webp"><img src="img/banner.png" alt="Banner-image"></picture>
 								</div>
 								<div class="banner__item">
-									<picture><source srcset="img/banner.webp" type="image/webp"><img src="img/banner.png" alt="Banner-image"></picture>
+									<picture><source srcset="app/views/img/banner.webp" type="image/webp"><img src="img/banner.png" alt="Banner-image"></picture>
 								</div>
 							</div>
 							<div class="banner__arrow banner-arrow-prev">
-								<picture><source srcset="img/icons/prev-slider.svg" type="image/webp"><img src="img/icons/prev-slider.svg" alt="Prev"></picture>
+								<picture><source srcset="app/views/img/icons/prev-slider.svg" type="image/webp"><img src="app/views/img/icons/prev-slider.svg" alt="Prev"></picture>
 							</div>
 							<div class="banner__arrow banner-arrow-next">
-								<picture><source srcset="img/icons/next-slider.svg" type="image/webp"><img src="img/icons/next-slider.svg" alt="Next"></picture>
+								<picture><source srcset="app/views/img/icons/next-slider.svg" type="image/webp"><img src="app/views/img/icons/next-slider.svg" alt="Next"></picture>
 							</div>
 							<div class="banner__paggination"></div>
 						</div>
@@ -552,7 +552,7 @@
 									<p class="catalog__goto">В каталог</p>
 								</div>
 								<div class="catalog__image">
-									<picture><source srcset="img/catalog/01.webp" type="image/webp"><img src="img/catalog/01.png" alt="Image"></picture>
+									<picture><source srcset="app/views/img/catalog/01.webp" type="image/webp"><img src="app/views/img/catalog/01.png" alt="Image"></picture>
 								</div>
 							</a>
 							<a href="#" class="catalog__item">
@@ -561,7 +561,7 @@
 									<p class="catalog__goto">В каталог</p>
 								</div>
 								<div class="catalog__image">
-									<picture><source srcset="img/catalog/02.webp" type="image/webp"><img src="img/catalog/02.png" alt="Image"></picture>
+									<picture><source srcset="app/views/img/catalog/02.webp" type="image/webp"><img src="app/views/img/catalog/02.png" alt="Image"></picture>
 								</div>
 							</a>
 							<a href="#" class="catalog__item">
@@ -570,7 +570,7 @@
 									<p class="catalog__goto">В каталог</p>
 								</div>
 								<div class="catalog__image">
-									<picture><source srcset="img/catalog/03.webp" type="image/webp"><img src="img/catalog/03.png" alt="Image"></picture>
+									<picture><source srcset="app/views/img/catalog/03.webp" type="image/webp"><img src="app/views/img/catalog/03.png" alt="Image"></picture>
 								</div>
 							</a>
 							<a href="#" class="catalog__item">
@@ -579,7 +579,7 @@
 									<p class="catalog__goto">В каталог</p>
 								</div>
 								<div class="catalog__image">
-									<picture><source srcset="img/catalog/04.webp" type="image/webp"><img src="img/catalog/04.png" alt="Image"></picture>
+									<picture><source srcset="app/views/img/catalog/04.webp" type="image/webp"><img src="app/views/img/catalog/04.png" alt="Image"></picture>
 								</div>
 							</a>
 							<a href="#" class="catalog__item">
@@ -588,7 +588,7 @@
 									<p class="catalog__goto">В каталог</p>
 								</div>
 								<div class="catalog__image">
-									<picture><source srcset="img/catalog/05.webp" type="image/webp"><img src="img/catalog/05.png" alt="Image"></picture>
+									<picture><source srcset="app/views/img/catalog/05.webp" type="image/webp"><img src="app/views/img/catalog/05.png" alt="Image"></picture>
 								</div>
 							</a>
 							<a href="#" class="catalog__item">
@@ -597,7 +597,7 @@
 									<p class="catalog__goto">В каталог</p>
 								</div>
 								<div class="catalog__image">
-									<picture><source srcset="img/catalog/06.webp" type="image/webp"><img src="img/catalog/06.png" alt="Image"></picture>
+									<picture><source srcset="app/views/img/catalog/06.webp" type="image/webp"><img src="app/views/img/catalog/06.png" alt="Image"></picture>
 								</div>
 							</a>
 							<a href="#" class="catalog__item">
@@ -606,7 +606,7 @@
 									<p class="catalog__goto">В каталог</p>
 								</div>
 								<div class="catalog__image">
-									<picture><source srcset="img/catalog/07.webp" type="image/webp"><img src="img/catalog/07.png" alt="Image"></picture>
+									<picture><source srcset="app/views/img/catalog/07.webp" type="image/webp"><img src="app/views/img/catalog/07.png" alt="Image"></picture>
 								</div>
 							</a>
 							<a href="#" class="catalog__item _sale">
@@ -615,7 +615,7 @@
 									<p class="catalog__goto">В каталог</p>
 								</div>
 								<div class="catalog__image">
-									<picture><source srcset="img/catalog/08.webp" type="image/webp"><img src="img/catalog/08.png" alt="Image"></picture>
+									<picture><source srcset="app/views/img/catalog/08.webp" type="image/webp"><img src="app/views/img/catalog/08.png" alt="Image"></picture>
 								</div>
 							</a>
 						</div>
@@ -629,7 +629,7 @@
 							<div class="specials__product product">
 								<div class="product__image image-product">
 									<a href="#" class="image-product__image">
-										<picture><source srcset="img/product/01.webp" type="image/webp"><img src="img/product/01.png" alt="Image-product" class="image-product__img"></picture>
+										<picture><source srcset="app/views/img/product/01.webp" type="image/webp"><img src="app/views/img/product/01.png" alt="Image-product" class="image-product__img"></picture>
 									</a>
 									<p class="image-product__sup">Best NFS <br> READER</p>
 								</div>
@@ -645,7 +645,7 @@
 							<div class="specials__product product">
 								<div class="product__image image-product">
 									<a href="#" class="image-product__image">
-										<picture><source srcset="img/product/02.webp" type="image/webp"><img src="img/product/02.png" alt="Image-product" class="image-product__img"></picture>
+										<picture><source srcset="app/views/img/product/02.webp" type="image/webp"><img src="app/views/img/product/02.png" alt="Image-product" class="image-product__img"></picture>
 									</a>
 									<p class="image-product__sup">desfire anti-metal</p>
 								</div>
@@ -661,7 +661,7 @@
 							<div class="specials__product product">
 								<div class="product__image image-product">
 									<a href="#" class="image-product__image">
-										<picture><source srcset="img/product/03.webp" type="image/webp"><img src="img/product/03.png" alt="Image-product" class="image-product__img"></picture>
+										<picture><source srcset="app/views/img/product/03.webp" type="image/webp"><img src="app/views/img/product/03.png" alt="Image-product" class="image-product__img"></picture>
 									</a>
 									<p class="image-product__sup">BEST 125kHz CARD</p>
 								</div>
@@ -677,7 +677,7 @@
 							<div class="specials__product product">
 								<div class="product__image image-product">
 									<a href="#" class="image-product__image">
-										<picture><source srcset="img/product/04.webp" type="image/webp"><img src="img/product/04.png" alt="Image-product" class="image-product__img"></picture>
+										<picture><source srcset="app/views/img/product/04.webp" type="image/webp"><img src="app/views/img/product/04.png" alt="Image-product" class="image-product__img"></picture>
 									</a>
 									<p class="image-product__sup">original em4200</p>
 								</div>
@@ -693,7 +693,7 @@
 							<div class="specials__product product">
 								<div class="product__image image-product">
 									<a href="#" class="image-product__image">
-										<picture><source srcset="img/product/05.webp" type="image/webp"><img src="img/product/05.png" alt="Image-product" class="image-product__img"></picture>
+										<picture><source srcset="app/views/img/product/05.webp" type="image/webp"><img src="app/views/img/product/05.png" alt="Image-product" class="image-product__img"></picture>
 									</a>
 									<p class="image-product__sup">BEST 125kHz CARD</p>
 								</div>
@@ -709,7 +709,7 @@
 							<div class="specials__product product">
 								<div class="product__image image-product">
 									<a href="#" class="image-product__image">
-										<picture><source srcset="img/product/06.webp" type="image/webp"><img src="img/product/06.png" alt="Image-product" class="image-product__img"></picture>
+										<picture><source srcset="app/views/img/product/06.webp" type="image/webp"><img src="app/views/img/product/06.png" alt="Image-product" class="image-product__img"></picture>
 									</a>
 									<p class="image-product__sup">desfire anti-metal</p>
 								</div>
@@ -725,7 +725,7 @@
 							<div class="specials__product product">
 								<div class="product__image image-product">
 									<a href="#" class="image-product__image">
-										<picture><source srcset="img/product/07.webp" type="image/webp"><img src="img/product/07.png" alt="Image-product" class="image-product__img"></picture>
+										<picture><source srcset="app/views/img/product/07.webp" type="image/webp"><img src="app/views/img/product/07.png" alt="Image-product" class="image-product__img"></picture>
 									</a>
 									<p class="image-product__sup">BEST 125kHz CARD</p>
 								</div>
@@ -741,7 +741,7 @@
 							<div class="specials__product product">
 								<div class="product__image image-product">
 									<a href="#" class="image-product__image">
-										<picture><source srcset="img/product/08.webp" type="image/webp"><img src="img/product/08.png" alt="Image-product" class="image-product__img"></picture>
+										<picture><source srcset="app/views/img/product/08.webp" type="image/webp"><img src="app/views/img/product/08.png" alt="Image-product" class="image-product__img"></picture>
 									</a>
 									<p class="image-product__sup">original em4200</p>
 								</div>
@@ -762,7 +762,7 @@
 						<div class="advantage__content">
 							<div class="advantage__item">
 								<div class="advantage__icon">
-									<picture><source srcset="img/icons/advantage/01.svg" type="image/webp"><img src="img/icons/advantage/01.svg" alt="Icon"></picture>
+									<picture><source srcset="app/views/img/icons/advantage/01.svg" type="image/webp"><img src="app/views/img/icons/advantage/01.svg" alt="Icon"></picture>
 								</div>
 								<p class="advantage__text">
 									<span class="advantage__value">10+</span> ЛЕТ ОПЫТА
@@ -770,7 +770,7 @@
 							</div>
 							<div class="advantage__item">
 								<div class="advantage__icon">
-									<picture><source srcset="img/icons/advantage/02.svg" type="image/webp"><img src="img/icons/advantage/02.svg" alt="Icon"></picture>
+									<picture><source srcset="app/views/img/icons/advantage/02.svg" type="image/webp"><img src="app/views/img/icons/advantage/02.svg" alt="Icon"></picture>
 								</div>
 								<p class="advantage__text">
 									<span class="advantage__value">1000+</span> клиентов
@@ -778,7 +778,7 @@
 							</div>
 							<div class="advantage__item">
 								<div class="advantage__icon">
-									<picture><source srcset="img/icons/advantage/03.svg" type="image/webp"><img src="img/icons/advantage/03.svg" alt="Icon"></picture>
+									<picture><source srcset="app/views/img/icons/advantage/03.svg" type="image/webp"><img src="app/views/img/icons/advantage/03.svg" alt="Icon"></picture>
 								</div>
 								<p class="advantage__text">
 									Поддержка и помощь
@@ -786,7 +786,7 @@
 							</div>
 							<div class="advantage__item">
 								<div class="advantage__icon">
-									<picture><source srcset="img/icons/advantage/04.svg" type="image/webp"><img src="img/icons/advantage/04.svg" alt="Icon"></picture>
+									<picture><source srcset="app/views/img/icons/advantage/04.svg" type="image/webp"><img src="app/views/img/icons/advantage/04.svg" alt="Icon"></picture>
 								</div>
 								<p class="advantage__text">
 									<span class="advantage__value">100%</span> безопасно
@@ -882,19 +882,19 @@
 			<ul class="footer__contacts contacts-footer">
 				<li class="contacts-footer__item">
 					<div class="contacts-footer__icon">
-						<picture><source srcset="img/icons/mail-icon.svg" type="image/webp"><img src="img/icons/mail-icon.svg" alt="Icon"></picture>
+						<picture><source srcset="app/views/img/icons/mail-icon.svg" type="image/webp"><img src="app/views/img/icons/mail-icon.svg" alt="Icon"></picture>
 					</div>
 					<a href="mailto:info@mscards.ro" class="contacts-footer__link">info@mscards.ro</a>
 				</li>
 				<li class="contacts-footer__item">
 					<div class="contacts-footer__icon">
-						<picture><source srcset="img/icons/phone-icon.svg" type="image/webp"><img src="img/icons/phone-icon.svg" alt="Icon"></picture>
+						<picture><source srcset="app/views/img/icons/phone-icon.svg" type="image/webp"><img src="app/views/img/icons/phone-icon.svg" alt="Icon"></picture>
 					</div>
 					<a href="tel:+473 85 658 586" class="contacts-footer__link">+473 85 658 586</a>
 				</li>
 				<li class="contacts-footer__item">
 					<div class="contacts-footer__icon">
-						<picture><source srcset="img/icons/location-icon.svg" type="image/webp"><img src="img/icons/location-icon.svg" alt="Icon"></picture>
+						<picture><source srcset="app/views/img/icons/location-icon.svg" type="image/webp"><img src="app/views/img/icons/location-icon.svg" alt="Icon"></picture>
 					</div>
 					<p class="contacts-footer__text">Calea Muncii 2, Mun. Brad, Caraș-Severin</p>
 				</li>
@@ -1024,7 +1024,7 @@
 
 		<!-- <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script> -->
 <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
-<script src="js/vendors.min.js"></script>
-<script src="js/app.min.js"></script>
+<script src="app/views/js/vendors.min.js"></script>
+<script src="app/views/js/app.min.js"></script>
 	</body>
 </html>

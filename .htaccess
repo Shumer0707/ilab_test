@@ -1,4 +1,9 @@
 RewriteEngine On
+
+# Исключение для статических файлов
+RewriteCond %{REQUEST_FILENAME} -f
+RewriteRule ^ - [L]
+
 RewriteBase /ilab/mscard/
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteCond %{REQUEST_FILENAME} !-d

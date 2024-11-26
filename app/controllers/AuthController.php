@@ -2,31 +2,41 @@
 
 namespace App\Controllers;
 
-use Core\Session;
 use App\Models\User;
+use Core\BaseController;
 
-class AuthController {
+class AuthController extends BaseController{
+    private $userModel;
+    protected $config;
+
+    public function __construct($config) {
+        $this->config = $config;
+        $this->userModel = new User();
+    }
+    
     public function showLoginPage() {
+        // $viewPath = $this->config['viewPath'];
         include __DIR__ . '/../views/login.php';
     }
 
     public function login() {
         $username = $_POST['username'] ?? '';
         $password = $_POST['password'] ?? '';
-
-        $userModel = new User();
-
-        if ($userModel->authenticate($username, $password)) {
-            Session::set('is_authenticated', true);
-            header('Location: /admin');
+        // $basePath = $this->config['basePath'];
+        // echo '<pre>';
+        // print_r($basePath);
+        // echo '</pre>';
+        // exit;
+        if ($this->userModel->authenticate($username, $password)) {
+            header("Location: /admin");
         } else {
-            echo "Invalid credentials!";
+            echo 'Invalid credentials.';
             $this->showLoginPage();
         }
     }
 
     public function logout() {
-        Session::destroy();
+        $this->userModel->logout();
         header('Location: /login');
     }
 }
