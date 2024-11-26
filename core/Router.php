@@ -27,12 +27,14 @@ class Router {
 
         $uri = trim($uri, '/'); // Удаляем лишние слэши
         $requestMethod = strtoupper($_SERVER['REQUEST_METHOD']);
-
-        echo '<pre>';
-        print_r(['processed_uri' => $uri, 'base_path' => $basePath]);
-        echo '</pre>';
-        exit;
+        // echo '<pre>';
+        // print_r(['processed_uri' => $uri, 'base_path' => $basePath]);
+        // echo '</pre>';
+        // exit;
         foreach ($this->routes as $route) {
+        //     echo '<pre>';
+        // print_r(['current_route' => $route, 'matching' => $route['uri'] === $uri && $route['method'] === $requestMethod]);
+        // echo '</pre>';
             if ($route['uri'] === $uri && $route['method'] === $requestMethod) {
                 // Обработка middleware
                 if (!empty($route['middleware'])) {

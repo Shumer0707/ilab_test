@@ -14,7 +14,7 @@ class AdminController extends BaseController{
 
     public function showDashboard() {
         if (!$this->userModel->isAuthenticated()) {
-            header('Location: /login');
+            header('Location: login');
             exit();
         }
 

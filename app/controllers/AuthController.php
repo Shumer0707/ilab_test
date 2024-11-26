@@ -15,20 +15,14 @@ class AuthController extends BaseController{
     }
     
     public function showLoginPage() {
-        // $viewPath = $this->config['viewPath'];
         include __DIR__ . '/../views/login.php';
     }
 
     public function login() {
         $username = $_POST['username'] ?? '';
         $password = $_POST['password'] ?? '';
-        // $basePath = $this->config['basePath'];
-        // echo '<pre>';
-        // print_r($basePath);
-        // echo '</pre>';
-        // exit;
         if ($this->userModel->authenticate($username, $password)) {
-            header("Location: /admin");
+            header("Location: admin");
         } else {
             echo 'Invalid credentials.';
             $this->showLoginPage();
@@ -37,6 +31,6 @@ class AuthController extends BaseController{
 
     public function logout() {
         $this->userModel->logout();
-        header('Location: /login');
+        header('Location: login');
     }
 }
