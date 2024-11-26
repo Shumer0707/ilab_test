@@ -1,0 +1,176 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f8f9fa;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* Хедер */
+header {
+    background-color: #0056a3; /* Более приглушённый синий */
+    color: #f4f4f4; /* Мягкий белый */
+    padding: 15px 0;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 15px;
+}
+
+header .search-form {
+    max-width: 600px; /* Максимальная ширина */
+    display: flex;
+    align-items: center;
+    flex-grow: 1; /* Растягивается для размещения */
+}
+
+header .search-form input {
+    flex-grow: 1; /* Инпут растягивается */
+    max-width: 500px; /* Максимальная ширина */
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-right: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+header .search-form button {
+    padding: 10px 20px;
+    max-width: 100px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 4px;
+    background-color: #6c757d; /* Серый тон */
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+header .search-form button:hover {
+    background-color: #5a6268; /* Более тёмный серый */
+}
+
+header .header-buttons button {
+    margin-left: 10px;
+    padding: 10px 20px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+header .header-buttons button:first-child {
+    background-color: #b84141; /* Мягкий красный */
+    color: #fff;
+}
+
+header .header-buttons button:first-child:hover {
+    background-color: #a12d2d; /* Темнее красный */
+}
+
+header .header-buttons button:last-child {
+    background-color: #e0b84c; /* Светлый золотистый */
+    color: #333;
+}
+
+header .header-buttons button:last-child:hover {
+    background-color: #c8a236; /* Более насыщенный золотистый */
+}
+
+/* Форма */
+form {
+    background-color: #ffffff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    width: 300px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 20px auto;
+}
+
+form h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 1.5rem;
+    color: #333;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+form label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #555;
+}
+
+form input {
+    width: 100%;
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+form button {
+    width: 100%;
+    padding: 10px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 4px;
+    background-color: #007bff;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+form button:hover {
+    background-color: #0056b3;
+}
+
+/* Футер */
+footer {
+    background-color: #343a40; /* Темно-серый */
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    margin-top: auto; /* Опускает футер вниз */
+    box-shadow: 0 -4px 6px rgba(0, 0, 0, 0.1);
+}
+input[type="number"] {
+    -moz-appearance: textfield; /* Для Firefox */
+}
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+    -webkit-appearance: none; /* Для Chrome, Safari, Edge */
+    margin: 0;
+}
+/* Адаптивность */
+@media (max-width: 768px) {
+    header .container {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    header .header-buttons button {
+        margin-left: 0;
+        margin-top: 10px;
+    }
+
+    header .search-form {
+        margin-bottom: 10px;
+    }
+}
+@import url('form_styles.css');

@@ -18,19 +18,17 @@ class AdminController extends BaseController{
             exit();
         }
 
-        $currentUser = $this->userModel->getCurrentUser();
+        // $currentUser = $this->userModel->getCurrentUser();
+        include __DIR__ . '/../views/admin/home.php';
+    }
 
-        echo '<h1>Admin Dashboard</h1>';
-        echo '<p>Welcome, ' . htmlspecialchars($currentUser['username']) . '!</p>';
-        echo '<a href="/logout">Logout</a>';
+    public function productForm(){
+        include __DIR__ . '/../views/admin/product-form.php';
+    }
+
+    public function addProduct(){
+        echo '<pre>';
+        print_r($_POST);
+        echo '</pre>';
     }
 }
-// class AdminController {
-//     public function showDashboard() {
-//         if (!Session::get('is_authenticated')) {
-//             header('Location: /login');
-//             exit();
-//         }
-//         include __DIR__ . '/../views/admin.php';
-//     }
-// }

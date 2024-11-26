@@ -9,4 +9,7 @@ $router->add('/login', 'App\Controllers\AuthController@login', ['method' => 'POS
 
 // Защищённые маршруты с middleware
 $router->add('/admin', 'App\Controllers\AdminController@showDashboard', ['method' => 'GET', 'middleware' => 'auth']);
+$router->add('/product-form', 'App\Controllers\AdminController@productForm', ['method' => 'GET', 'middleware' => 'auth']);
+$router->add('/add-product', 'App\Controllers\AdminController@addProduct', ['method' => 'POST', 'middleware' => 'auth']);
+
 $router->add('/logout', 'App\Controllers\AuthController@logout', ['method' => 'GET', 'middleware' => 'auth']);

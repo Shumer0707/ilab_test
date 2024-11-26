@@ -1,0 +1,72 @@
+/* Секция для добавления товара */
+.add-product-section {
+    padding: 20px;
+    background-color: #f8f9fa; /* Светлый фон */
+}
+
+/* Форма добавления товара */
+.add-product-form {
+    background-color: #ffffff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    width: 400px;
+    margin: 20px auto;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.add-product-form h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 1.5rem;
+    color: #333;
+}
+
+.add-product-form .form-group {
+    margin-bottom: 15px;
+}
+
+.add-product-form label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #555;
+}
+
+.add-product-form input[type="text"],
+.add-product-form input[type="number"] {
+    width: 100%;
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.add-product-form .radio-group {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.add-product-form .radio-group label {
+    display: inline-block;
+    font-size: 1rem;
+    color: #555;
+}
+
+.add-product-form button {
+    width: 100%;
+    padding: 10px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 4px;
+    background-color: #007bff; /* Мягкий синий */
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.add-product-form button:hover {
+    background-color: #0056a3; /* Более тёмный синий */
+}
