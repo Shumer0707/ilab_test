@@ -498,13 +498,13 @@
 						</div>
 					</div>
 			</div>
-			<form action="#" class="main-header__search search-header">
+			<form action="show" class="main-header__search search-header" method="GET">
 					<div class="search-header__head">
 						<picture><source srcset="app/views/img/icons/search.svg" type="image/webp"><img src="app/views/img/icons/search.svg" alt="Open-search"></picture>
 					</div>
 					<div class="search-header__body">
 						<div class="search-header__content">
-							<input type="text" name="search" placeholder="Поиск" class="search-header__input">
+							<input type="number" name="search" placeholder="Поиск" class="search-header__input">
 							<button type="submit" class="search-header__btn">
 								<picture><source srcset="app/views/img/icons/search.svg" type="image/webp"><img src="app/views/img/icons/search.svg" alt="Search"></picture>
 							</button>

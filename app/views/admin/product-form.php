@@ -14,20 +14,25 @@
                 <input type="number" id="price" name="price" placeholder="Enter price" min="0" step="0.01" required>
             </div>
             <div class="form-group">
-                <label>Discount:</label>
+                <label>Discount(предполагаются разные группы скидок):</label>
                 <div class="radio-group">
-                    <label>
-                        <input type="radio" name="discount" value="0" checked> No Discount
+                    <?php foreach ($discount as $discount): ?>
+                    <label><?php echo htmlspecialchars($discount['title']) ?>
+                        <input  type="radio" 
+                                name="discount" 
+                                value="<?php echo htmlspecialchars($discount['id']) ?>"> 
                     </label>
-                    <label>
-                        <input type="radio" name="discount" value="10"> 10%
-                    </label>
-                    <label>
-                        <input type="radio" name="discount" value="20"> 20%
-                    </label>
-                    <label>
-                        <input type="radio" name="discount" value="30"> 30%
-                    </label>
+                    <?php endforeach; ?>
+                </div>
+            </div>
+            <div class="form-group">
+                <label>Additional options (возможно толщина)</label>
+                <div class="radio-group">
+                    <?php foreach ($smallOption as $smallOption): ?>
+                        <label><?php echo htmlspecialchars($smallOption['title']) ?>
+                            <input type="checkbox" name="small_option[]" value="<?php echo htmlspecialchars($smallOption['id']) ?>">
+                        </label>
+                    <?php endforeach; ?>
                 </div>
             </div>
             <button type="submit">Add Product</button>

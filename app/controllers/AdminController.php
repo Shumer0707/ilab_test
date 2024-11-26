@@ -2,7 +2,11 @@
 
 namespace App\Controllers;
 
+use App\Models\Discount;
 use App\Models\User;
+use App\Models\Item;
+use App\Models\SmallOption;
+use App\Validators\ProductValidator;
 use Core\BaseController;
 
 class AdminController extends BaseController{
@@ -18,17 +22,48 @@ class AdminController extends BaseController{
             exit();
         }
 
-        // $currentUser = $this->userModel->getCurrentUser();
-        include __DIR__ . '/../views/admin/home.php';
+        $this->render('admin/home');
+        // include __DIR__ . '/../views/admin/home.php';
     }
 
     public function productForm(){
-        include __DIR__ . '/../views/admin/product-form.php';
+        // $item = Item::find(1);
+        // $discount = Item::discount(1);
+        // $smallOptions = Item::smallOptions(1);
+        // $options = SmallOption::all();
+        // $items = SmallOption::items(1);
+        // echo '<pre>';
+        // print_r($items);
+        // print_r($options);
+        $data['discount'] = Discount::all();
+        $data['smallOption'] = SmallOption::all();
+        $this->render('admin/product-form', $data);
     }
 
     public function addProduct(){
-        echo '<pre>';
-        print_r($_POST);
-        echo '</pre>';
+        $reply = [];
+        $data = [
+            'product_name' => $_POST['product_name'] ?? '',
+            'price' => $_POST['price'] ?? '',
+            'discount' => $_POST['discount'] ?? '',
+            'small_option' => $_POST['small_option'] ?? [],
+        ];
+
+        $validator = new ProductValidator();
+
+        if ($validator->validate($data)) {
+            // Если валидация прошла
+            $productId = Item::create(
+                $data['product_name'],
+                $data['price'],
+                $data['discount'],
+                $data['small_option']
+            );
+            $reply['succes'] = "Продукт успешно создан с ID: $productId";
+        } else {
+            // Если есть ошибки валидации
+            $reply['error'] = $validator->errors();
+        }
+        $this->render('admin/home', $reply);
     }
 }

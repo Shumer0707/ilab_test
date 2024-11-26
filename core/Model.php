@@ -6,9 +6,10 @@ use PDO;
 
 abstract class Model
 {
-    protected static function getDB()
+    public static function getDB()
     {
         static $db = null;
+
         if ($db === null) {
             $config = require __DIR__ . '/../config/database.php';
             $db = new PDO(
@@ -18,6 +19,16 @@ abstract class Model
             );
             $db->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
         }
+
         return $db;
+    }
+
+    // Метод для выполнения запросов
+    protected static function query($sql, $params = [])
+    {
+        $db = static::getDB();
+        $stmt = $db->prepare($sql);
+        $stmt->execute($params);
+        return $stmt;
     }
 }
