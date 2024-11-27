@@ -23,18 +23,9 @@ class AdminController extends BaseController{
         }
 
         $this->render('admin/home');
-        // include __DIR__ . '/../views/admin/home.php';
     }
 
     public function productForm(){
-        // $item = Item::find(1);
-        // $discount = Item::discount(1);
-        // $smallOptions = Item::smallOptions(1);
-        // $options = SmallOption::all();
-        // $items = SmallOption::items(1);
-        // echo '<pre>';
-        // print_r($items);
-        // print_r($options);
         $data['discount'] = Discount::all();
         $data['smallOption'] = SmallOption::all();
         $this->render('admin/product-form', $data);

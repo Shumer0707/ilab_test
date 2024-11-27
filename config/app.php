@@ -1,7 +1,8 @@
 <?php
 
 $router->add('/', 'App\Controllers\HomeController@index');
-$router->add('/show/{search}', 'App\Controllers\HomeController@showProduct', ['method' => 'GET']);
+$router->add('/show', 'App\Controllers\HomeController@showProduct', ['method' => 'GET']);
+$router->add('/update-price', 'App\Controllers\HomeController@updatePrice', ['method' => 'POST']);
 
 // Открытые маршруты
 $router->add('/login', 'App\Controllers\AuthController@showLoginPage');

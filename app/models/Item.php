@@ -3,8 +3,18 @@ namespace App\Models;
 use PDO;
 use Core\Model;
 use Exception;
+/**
+ * @property int $id
+ * @property string $title
+ * @property float $price
+ * @property int|null $discounts_id
+ */
 class Item extends Model
 {
+
+    public $discounts_id = '';
+    public $id = ''
+    ;
     public static function all()
     {
         $stmt = self::query("SELECT * FROM items");
@@ -14,29 +24,47 @@ class Item extends Model
     public static function find($id)
     {
         $stmt = self::query("SELECT * FROM items WHERE id = :id", ['id' => $id]);
-        return $stmt->fetch(PDO::FETCH_ASSOC);
+        $result = $stmt->fetch(\PDO::FETCH_ASSOC);
+
+        if ($result) {
+            $item = new self();
+            foreach ($result as $key => $value) {
+                $item->$key = $value; // Инициализация свойств объекта
+            }
+            return $item;
+        }
+
+        return null;
     }
 
-    public static function discount($id)
+    public function discount()
     {
-        $stmt = self::query("
-            SELECT d.* 
-            FROM discounts d
-            INNER JOIN items i ON i.discounts_id = d.id
-            WHERE i.id = :id
-        ", ['id' => $id]);
-        return $stmt->fetch(PDO::FETCH_ASSOC);
+        if ($this->discounts_id === '') {
+            return null; // Если поле не заполнено, возвращаем null
+        }else{
+            $stmt = self::query("SELECT * FROM discounts WHERE id = :id", ['id' => $this->discounts_id]);
+            $result = $stmt->fetch(\PDO::FETCH_ASSOC);
+
+            if ($result) {
+                return (object) $result; // Преобразуем в объект для удобного обращения через ->
+            }
+        }
     }
 
-    public static function smallOptions($id)
+    public function smallOptions()
     {
+        if ($this->id === '') {
+            throw new \Exception("ID товара не установлен.");
+        }
+
         $stmt = self::query("
             SELECT so.*
             FROM small_options so
             INNER JOIN items_small_options iso ON so.id = iso.small_option_id
             WHERE iso.item_id = :id
-        ", ['id' => $id]);
-        return $stmt->fetchAll(PDO::FETCH_ASSOC);
+        ", ['id' => $this->id]);
+
+        return $stmt->fetchAll(\PDO::FETCH_ASSOC);
     }
     /**
      * Создать новый товар с связями.
