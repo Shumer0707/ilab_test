@@ -3,6 +3,7 @@
 namespace App\Controllers;
 
 use App\Models\Item;
+use App\Models\SmallOption;
 use Core\BaseController;
 
 class HomeController extends BaseController
@@ -31,8 +32,8 @@ class HomeController extends BaseController
             $selectedOptions = $data['selectedOptions'];
             $itemId = (int) $data['itemId'];
             
-            $data = $this->getData($itemId, $quantity);
-            // include __DIR__ . '/../views/fetch/price_container.php';
+            $data = $this->getData($itemId, $quantity ,$selectedOptions);
+
             ob_start();
             $this->render('fetch/price_container', $data);
             $html = ob_get_clean();
@@ -42,26 +43,27 @@ class HomeController extends BaseController
             echo $html;
         }
     }
-    public function getData($id, $count_item){
+    public function getData($id, $count_item, $options = []){
         $data['item'] = Item::find($id);
         $data['count_item'] = $count_item;
-        if($count_item > 1000){
+
+        if($count_item >= 1000){
             $data['actual_price'] = $data['item']->price - ($data['item']->price * ($data['item']->discount()->from1000 / 100));
             $data['actual_price_options_of'] = $data['item']->price - ($data['item']->price * ($data['item']->discount()->from1000 / 100));
         }
-        elseif($count_item > 500){
+        elseif($count_item >= 500){
             $data['actual_price'] = $data['item']->price - ($data['item']->price * ($data['item']->discount()->from500 / 100));
             $data['actual_price_options_of'] = $data['item']->price - ($data['item']->price * ($data['item']->discount()->from500 / 100));
         }
-        elseif($count_item > 300){
+        elseif($count_item >= 300){
             $data['actual_price'] = $data['item']->price - ($data['item']->price * ($data['item']->discount()->from300 / 100));
             $data['actual_price_options_of'] = $data['item']->price - ($data['item']->price * ($data['item']->discount()->from300 / 100));
         }
-        elseif($count_item > 100){
+        elseif($count_item >= 100){
             $data['actual_price'] = $data['item']->price - ($data['item']->price * ($data['item']->discount()->from100 / 100));
             $data['actual_price_options_of'] = $data['item']->price - ($data['item']->price * ($data['item']->discount()->from100 / 100));
         }
-        elseif($count_item > 50){
+        elseif($count_item >= 50){
             $data['actual_price'] = $data['item']->price - ($data['item']->price * ($data['item']->discount()->from50 / 100));
             $data['actual_price_options_of'] = $data['item']->price - ($data['item']->price * ($data['item']->discount()->from50 / 100));
         }
@@ -69,6 +71,16 @@ class HomeController extends BaseController
             $data['actual_price'] = $data['item']->price;
             $data['actual_price_options_of'] = $data['item']->price;
         }
+        
+        if($options !== []){
+            $data['actual_price'] = $data['actual_price'] + $this->getOptionPrice($options);
+        }
+
         return $data;
+    }
+
+    public function getOptionPrice($arr){
+        $total = SmallOption::getSumByIds($arr);
+        return $total;
     }
 }

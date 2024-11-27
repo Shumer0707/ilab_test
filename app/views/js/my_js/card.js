@@ -22,7 +22,6 @@ document.addEventListener("DOMContentLoaded", function () {
             selectedOptions: selectedOptions,
             itemId: itemId,
         };
-        console.log(payload);
         
         // Отправляем данные через fetch
         fetch('update-price', {

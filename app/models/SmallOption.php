@@ -27,4 +27,24 @@ class SmallOption extends Model
         ", ['id' => $id]);
         return $stmt->fetchAll(PDO::FETCH_ASSOC);
     }
+    public static function getSumByIds(array $ids): float
+    {
+        if (empty($ids)) {
+            return 0; // Если массив пустой, возвращаем 0
+        }
+
+        // Подготовка плейсхолдеров для запроса
+        $placeholders = implode(',', array_fill(0, count($ids), '?'));
+
+        // Выполнение запроса
+        $stmt = self::query("
+            SELECT SUM(price) as total
+            FROM small_options
+            WHERE id IN ($placeholders)
+        ", $ids);
+
+        $result = $stmt->fetch(\PDO::FETCH_ASSOC);
+
+        return $result['total'] ?? 0; // Возвращаем сумму, либо 0, если ничего не найдено
+    }
 }

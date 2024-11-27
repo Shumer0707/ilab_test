@@ -15,6 +15,11 @@ class AuthController extends BaseController{
     }
     
     public function showLoginPage() {
+
+        if (isset($_SESSION['user'])) {
+            header('Location: admin');
+            exit;
+        }
         include __DIR__ . '/../views/login.php';
     }
 

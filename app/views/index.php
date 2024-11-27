@@ -18,7 +18,7 @@
 			<nav class="top-header__navigation navigation-top-header">
 				<ul class="navigation-top-header__list">
 					<li class="navigation-top-header__item">
-						<a href="login" class="navigation-top-header__link">Войти</a>
+						<a href="login" class="navigation-top-header__link">Админка</a>
 					</li>
 					<li class="navigation-top-header__item">
 						<a href="#" class="navigation-top-header__link">Блог</a>

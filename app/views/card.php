@@ -18,7 +18,7 @@
 		<nav class="top-header__navigation navigation-top-header">
 				<ul class="navigation-top-header__list">
 					<li class="navigation-top-header__item">
-						<a href="login" class="navigation-top-header__link">Войти</a>
+						<a href="login" class="navigation-top-header__link">Админка</a>
 					</li>
 					<li class="navigation-top-header__item">
 						<a href="#" class="navigation-top-header__link">Блог</a>
@@ -812,7 +812,7 @@
 										<div class="related-card__product product">
 											<div class="product__image image-product">
 												<a href="#" class="image-product__image">
-													<picture><source app/views/srcset="img/product/02.webp" type="image/webp"><iapp/views/mg src="img/product/02.png" alt="Image-product" class="image-product__img"></picture>
+													<picture><source srcset="app/views/img/product/02.webp" type="image/webp"><iapp/views/mg src="img/product/02.png" alt="Image-product" class="image-product__img"></picture>
 												</a>
 												<p class="image-product__sup">original em4200</p>
 											</div>
@@ -828,7 +828,7 @@
 										<div class="related-card__product product">
 											<div class="product__image image-product">
 												<a href="#" class="image-product__image">
-													<picture><source app/views/srcset="img/product/01.webp" type="image/webp"><iapp/views/mg src="img/product/01.png" alt="Image-product" class="image-product__img"></picture>
+													<picture><source srcset="app/views/img/product/01.webp" type="image/webp"><iapp/views/mg src="img/product/01.png" alt="Image-product" class="image-product__img"></picture>
 												</a>
 												<p class="image-product__sup">original em4200</p>
 											</div>
@@ -844,7 +844,7 @@
 										<div class="related-card__product product">
 											<div class="product__image image-product">
 												<a href="#" class="image-product__image">
-													<picture><source app/views/srcset="img/product/03.webp" type="image/webp"><iapp/views/mg src="img/product/03.png" alt="Image-product" class="image-product__img"></picture>
+													<picture><source srcset="app/views/img/product/03.webp" type="image/webp"><iapp/views/mg src="img/product/03.png" alt="Image-product" class="image-product__img"></picture>
 												</a>
 												<p class="image-product__sup">original em4200</p>
 											</div>
@@ -884,7 +884,7 @@
 								<div class="interested__product product">
 									<div class="product__image image-product">
 										<a href="#" class="image-product__image">
-											<picture><source app/views/srcset="img/product/01.webp" type="image/webp"><iapp/views/mg src="img/product/01.png" alt="Image-product" class="image-product__img"></picture>
+											<picture><source srcset="app/views/img/product/01.webp" type="image/webp"><iapp/views/mg src="img/product/01.png" alt="Image-product" class="image-product__img"></picture>
 										</a>
 										<p class="image-product__sup">Best NFS <br> READER</p>
 									</div>
@@ -900,7 +900,7 @@
 								<div class="interested__product product">
 									<div class="product__image image-product">
 										<a href="#" class="image-product__image">
-											<picture><source app/views/srcset="img/product/02.webp" type="image/webp"><iapp/views/mg src="img/product/02.png" alt="Image-product" class="image-product__img"></picture>
+											<picture><source srcset="app/views/img/product/02.webp" type="image/webp"><iapp/views/mg src="img/product/02.png" alt="Image-product" class="image-product__img"></picture>
 										</a>
 										<p class="image-product__sup">desfire anti-metal</p>
 									</div>
@@ -916,7 +916,7 @@
 								<div class="interested__product product">
 									<div class="product__image image-product">
 										<a href="#" class="image-product__image">
-											<picture><source app/views/srcset="img/product/03.webp" type="image/webp"><iapp/views/mg src="img/product/03.png" alt="Image-product" class="image-product__img"></picture>
+											<picture><source srcset="app/views/img/product/03.webp" type="image/webp"><iapp/views/mg src="img/product/03.png" alt="Image-product" class="image-product__img"></picture>
 										</a>
 										<p class="image-product__sup">BEST 125kHz CARD</p>
 									</div>
@@ -932,7 +932,7 @@
 								<div class="interested__product product">
 									<div class="product__image image-product">
 										<a href="#" class="image-product__image">
-											<picture><source app/views/srcset="img/product/04.webp" type="image/webp"><iapp/views/mg src="img/product/04.png" alt="Image-product" class="image-product__img"></picture>
+											<picture><source srcset="app/views/img/product/04.webp" type="image/webp"><iapp/views/mg src="img/product/04.png" alt="Image-product" class="image-product__img"></picture>
 										</a>
 										<p class="image-product__sup">original em4200</p>
 									</div>
@@ -948,7 +948,7 @@
 								<div class="interested__product product">
 									<div class="product__image image-product">
 										<a href="#" class="image-product__image">
-											<picture><source app/views/srcset="img/product/05.webp" type="image/webp"><iapp/views/mg src="img/product/05.png" alt="Image-product" class="image-product__img"></picture>
+											<picture><source srcset="app/views/img/product/05.webp" type="image/webp"><iapp/views/mg src="img/product/05.png" alt="Image-product" class="image-product__img"></picture>
 										</a>
 										<p class="image-product__sup">BEST 125kHz CARD</p>
 									</div>
@@ -964,7 +964,7 @@
 								<div class="interested__product product">
 									<div class="product__image image-product">
 										<a href="#" class="image-product__image">
-											<picture><source app/views/srcset="img/product/06.webp" type="image/webp"><iapp/views/mg src="img/product/06.png" alt="Image-product" class="image-product__img"></picture>
+											<picture><source srcset="app/views/img/product/06.webp" type="image/webp"><iapp/views/mg src="img/product/06.png" alt="Image-product" class="image-product__img"></picture>
 										</a>
 										<p class="image-product__sup">desfire anti-metal</p>
 									</div>
@@ -980,7 +980,7 @@
 								<div class="interested__product product">
 									<div class="product__image image-product">
 										<a href="#" class="image-product__image">
-											<picture><source app/views/srcset="img/product/07.webp" type="image/webp"><iapp/views/mg src="img/product/07.png" alt="Image-product" class="image-product__img"></picture>
+											<picture><source srcset="app/views/img/product/07.webp" type="image/webp"><iapp/views/mg src="img/product/07.png" alt="Image-product" class="image-product__img"></picture>
 										</a>
 										<p class="image-product__sup">BEST 125kHz CARD</p>
 									</div>
@@ -996,7 +996,7 @@
 								<div class="interested__product product">
 									<div class="product__image image-product">
 										<a href="#" class="image-product__image">
-											<picture><source app/views/srcset="img/product/08.webp" type="image/webp"><iapp/views/mg src="img/product/08.png" alt="Image-product" class="image-product__img"></picture>
+											<picture><source srcset="app/views/img/product/08.webp" type="image/webp"><iapp/views/mg src="img/product/08.png" alt="Image-product" class="image-product__img"></picture>
 										</a>
 										<p class="image-product__sup">original em4200</p>
 									</div>

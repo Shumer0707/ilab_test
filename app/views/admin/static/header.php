@@ -11,8 +11,8 @@
     <!-- Header -->
     <header class="header">
         <div class="container">
-            <form action="/search" method="GET" class="search-form">
-                <input type="number" name="product_id" placeholder="Search by Product ID" required>
+            <form action="show" method="GET" class="search-form">
+                <input type="number" name="search" placeholder="Search by Product ID" required>
                 <button type="submit">Search</button>
             </form>
             <div class="header-buttons">
