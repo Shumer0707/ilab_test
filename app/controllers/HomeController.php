@@ -45,6 +45,10 @@ class HomeController extends BaseController
     }
     public function getData($id, $count_item, $options = []){
         $data['item'] = Item::find($id);
+        if(empty($data['item'])){
+            echo'такого товара нет, вернитесь';
+            exit;
+        }
         $data['count_item'] = $count_item;
 
         if($count_item >= 1000){
